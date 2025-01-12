@@ -1,0 +1,9 @@
+.loader {
+  font-size: 18px;
+  color: #007bff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

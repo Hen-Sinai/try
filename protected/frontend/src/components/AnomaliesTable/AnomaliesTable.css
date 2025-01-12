@@ -1,0 +1,125 @@
+/* General container */
+.table-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  min-width: 200px;
+}
+
+.filter-card label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.filter-card select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #f1f1f1;
+  color: #333;
+  cursor: pointer;
+}
+
+.filter-card select:hover {
+  background-color: #e0e0e0;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table thead {
+  background-color: #727972;
+  color: white;
+}
+
+.table th {
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+}
+
+.table tbody tr {
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table td {
+  padding: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.table td.no-data {
+  font-style: italic;
+  color: #888;
+  text-align: center;
+}
+
+.reason-list {
+  padding-left: 20px;
+}
+
+.reason-list li {
+  word-wrap: break-word;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .table th, .table td {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .table-container {
+    padding: 15px;
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter-card {
+    width: 100%;
+  }
+}

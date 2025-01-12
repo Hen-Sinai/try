@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES6",                                  // Target JavaScript version (ES6 or higher)
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],         // Include libraries for DOM and modern JavaScript
+    "jsx": "react-jsx",                               // Use React JSX transform
+    "module": "ESNext",                               // Module system for modern JavaScript
+    "moduleResolution": "Node",                      // Resolve modules as Node.js does
+    "strict": true,                                   // Enable all strict type-checking options
+
+    /* Type Checking Options */
+    "strictNullChecks": true,                         // Null/undefined are only assignable to their respective types
+    "noImplicitAny": true,                            // Raise errors on variables with implicit `any` type
+    "noImplicitThis": true,                           // Raise errors on `this` expressions with implicit `any` type
+    "alwaysStrict": true,                             // Parse in strict mode and emit "use strict" for each file
+
+    /* Module Resolution Options */
+    "esModuleInterop": true,                          // Enable compatibility with CommonJS modules
+    "allowSyntheticDefaultImports": true,            // Allow default imports from modules with no default export
+
+    /* Output Options */
+    "outDir": "./build",                              // Redirect output structure to `build` folder
+    "sourceMap": true,                                // Generate source maps for easier debugging
+
+    /* Include and Exclude */
+    "skipLibCheck": true,                             // Skip type-checking declaration files for faster compilation
+    "forceConsistentCasingInFileNames": true          // Disallow differently cased references to the same file
+  },
+  "include": ["src"],                                  // Include files in the `src` directory
+  "exclude": ["node_modules", "build"]                // Exclude unnecessary files/folders
+}
